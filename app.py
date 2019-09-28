@@ -50,4 +50,5 @@ def user(id):
       return render_template('user.html', user = user)
   return "Not Found :'("
 
-app.run(port = 5959, debug = True)
+if __name__ == '__main__':
+    app.run(port = 5959, debug = True)
